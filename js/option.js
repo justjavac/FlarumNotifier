@@ -91,8 +91,16 @@
 			var url = rootUrl + '/api/users/' + userId;
 
 			xhr('GET', url, opts, function (data, status, response) {
+				if (status == 0) {
+					tokenStatus.className = "text-failure";
+					tokenStatus.innerText = chrome.i18n.getMessage('extTokenInvalid')
+						+ ": " + chrome.i18n.getMessage('extErrorNetwork');
+					FlarumNotify.settings.remove('email');
+					document.getElementById('email').innerText = FlarumNotify.settings.get('email');
+					return;
+				}
+
 				if (status >= 500) {
-					console.log('server error');
 					tokenStatus.className = "text-failure";
 					tokenStatus.innerText = chrome.i18n.getMessage('extTokenInvalid')
 						+ ": " + chrome.i18n.getMessage('extErrorServer');
@@ -102,7 +110,6 @@
 				}
 
 				if (status >= 400) {
-					console.log('client error: ' + data);
 					tokenStatus.className = "text-failure";
 					tokenStatus.innerText = chrome.i18n.getMessage('extTokenInvalid');
 					FlarumNotify.settings.remove('email');
@@ -113,7 +120,6 @@
 				try {
 					data = JSON.parse(data);
 				} catch (err) {
-					console.log('parse error');
 					tokenStatus.className = "text-failure";
 					tokenStatus.innerText = chrome.i18n.getMessage('extTokenInvalid')
 						+ ": " + chrome.i18n.getMessage('extErrorParse');
@@ -124,7 +130,7 @@
 
 				if (data && data.data.attributes && data.data.attributes.hasOwnProperty('email')) {
 					FlarumNotify.settings.set('email', data.data.attributes.email);
-					FlarumNotify.settings.set('unreadNotificationsCount', 
+					FlarumNotify.settings.set('unreadNotificationsCount',
 						data.data.attributes.unreadNotificationsCount);
 					document.getElementById('email').innerText = FlarumNotify.settings.get('email');
 					tokenStatus.className = "text-success";
@@ -159,7 +165,6 @@
 
 			xhr('POST', url.value + '/login', opts, function (data, status, response) {
 				if (status >= 500) {
-					console.log('server error');
 					return;
 				}
 
@@ -170,14 +175,12 @@
 				}
 
 				if (status >= 400) {
-					console.log('client error: ' + data);
 					return;
 				}
 
 				try {
 					data = JSON.parse(data);
 				} catch (err) {
-					console.log('parse error');
 					return;
 				}
 
@@ -188,7 +191,6 @@
 					return;
 				}
 
-				console.log('data format error');
 				return;
 			}, post_data);
 

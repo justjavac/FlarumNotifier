@@ -38,12 +38,15 @@
    "extCopyright": {
       "message": "Copyright justjavac 2015."
    },
-   
+
    "extErrorMissingToken": {
       "message": "Missing access token, please create one in Options."
    },
    "extErrorServer": {
       "message": "Server Error."
+   },
+   "extErrorNetwork": {
+      "message": "Network Error."
    },
    "extErrorDataFormat": {
       "message": "Unable to find count."
@@ -81,7 +84,7 @@
    "extStatuseFailure": {
       "message": "Failure"
    },
-   
+
 
    "pageActionTitle": {
       "message": "Click to view details..."

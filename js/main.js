@@ -18,7 +18,7 @@
 	function update() {
 		window.NotificationsCount(function (err, readTime) {
 			var interval = window.FlarumNotify.settings.get('interval');
-			
+
 			var text;
 
 			// unconditionally schedule alarm
@@ -28,6 +28,9 @@
 				switch (err.message) {
 					case 'missing token':
 						text = chrome.i18n.getMessage('extErrorMissingToken');
+						break;
+					case 'network error':
+						text = chrome.i18n.getMessage('extErrorNetwork');
 						break;
 					case 'server error':
 						text = chrome.i18n.getMessage('extErrorServer');
@@ -48,7 +51,7 @@
 			window.FlarumNotify.settings.set('readTime', new Date(readTime).getTime());
 
 			window.flarumUnreadCount(function (err, count) {
-				
+
 				var text;
 
 				if (err) {
@@ -58,6 +61,9 @@
 							break;
 						case 'server error':
 							text = chrome.i18n.getMessage('extErrorServer');
+							break;
+						case 'network error':
+							text = chrome.i18n.getMessage('extErrorNetwork');
 							break;
 						case 'data format error':
 						case 'parse error':

@@ -73,6 +73,11 @@
         // var participating = window.FlarumNotify.settings.get('participating');
 
 		xhr('GET', url, opts, function (data, status, response) {
+			if (status == 0) {
+				cb(new Error('network error'), null);
+				return;
+			}
+
 			if (status >= 500) {
 				cb(new Error('server error'), null);
 				return;

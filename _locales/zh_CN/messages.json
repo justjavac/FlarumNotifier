@@ -44,6 +44,9 @@
    "extErrorServer": {
       "message": "服务器错误。"
    },
+   "extErrorNetwork": {
+      "message": "网络异常。"
+   },
    "extErrorDataFormat": {
       "message": "数据格式错误。"
    },
