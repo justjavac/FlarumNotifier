@@ -16,7 +16,7 @@ It checks the Flarum discussion API every minute.
 
 - [Chrome Web Store](https://chrome.google.com/webstore/detail/flarum-notifier/ejpfiicmhnjilbdomflkdcbflomoobmh)
 
-### Credits
+## Credits
 
 - [justjavac](https://github.com/justjavac)
 
