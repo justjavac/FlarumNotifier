@@ -1,0 +1,89 @@
+{
+   "extDesc": {
+      "message": "Displays your Flarum notifications unread count."
+   },
+   "extName": {
+      "message": "Flarum Notifier"
+   },
+   "extShortName": {
+      "message": "FlarumNotifier"
+   },
+   "extDefaultUrl": {
+      "message": "https://discuss.flarum.org"
+   },
+   "extTxtUrl": {
+      "message": "Root url (eg. https://discuss.flarum.org)"
+   },
+   "extTxtUserName": {
+      "message": "Username or Email"
+   },
+   "extTxtPassword": {
+      "message": "Password"
+   },
+   "extBtnLogin": {
+      "message": "Log In"
+   },
+   "extLogout": {
+      "message": "Logout"
+   },
+   "extBtnCancel": {
+      "message": "Cancel"
+   },
+   "extInvalidLogin": {
+      "message": "Your login details were incorrect."
+   },
+   "extIntroductionSource": {
+      "message": "Source Code:"
+   },
+   "extCopyright": {
+      "message": "Copyright justjavac 2015."
+   },
+   
+   "extErrorMissingToken": {
+      "message": "Missing access token, please create one in Options."
+   },
+   "extErrorServer": {
+      "message": "Server Error."
+   },
+   "extErrorDataFormat": {
+      "message": "Unable to find count."
+   },
+   "extErrorParse": {
+      "message": "Parse Error."
+   },
+   "extErrorUnknown": {
+      "message": "Unknown error."
+   },
+   "extTokenInvalid": {
+      "message": "Invalid"
+   },
+   "extTokenChecking": {
+      "message": "Checking..."
+   },
+   "extTokenValid": {
+      "message": "Valid"
+   },
+   "extAutoCheck": {
+      "message": "Token is updated periodically."
+   },
+   "extCheckNow": {
+      "message": "Check Now"
+   },
+   "extDelete": {
+      "message": "Delete"
+   },
+   "extEnable": {
+      "message": "Enable"
+   },
+   "extStatuseSuccess": {
+      "message": "Success"
+   },
+   "extStatuseFailure": {
+      "message": "Failure"
+   },
+   
+
+   "pageActionTitle": {
+      "message": "Click to view details..."
+   }
+}

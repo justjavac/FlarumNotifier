@@ -1,0 +1,87 @@
+{
+   "extDesc": {
+      "message": "显示你的 Flarum 社区未读的帖子或者通知数。"
+   },
+   "extName": {
+      "message": "Flarum Notifier"
+   },
+   "extShortName": {
+      "message": "FlarumNotifier"
+   },
+   "extDefaultUrl": {
+      "message": "http://discuss.flarum.org.cn"
+   },
+   "extTxtUrl": {
+      "message": "URL地址 (例如: http://discuss.flarum.org.cn)"
+   },
+   "extTxtUserName": {
+      "message": "用户名 或 邮箱"
+   },
+   "extTxtPassword": {
+      "message": "密码"
+   },
+   "extBtnLogin": {
+      "message": "登录"
+   },
+   "extLogout": {
+      "message": "退出"
+   },
+   "extBtnCancel": {
+      "message": "取消"
+   },
+   "extInvalidLogin": {
+      "message": "登录失败！"
+   },
+   "extIntroductionSource": {
+      "message": "源码地址"
+   },
+   "extCopyright": {
+      "message": "版权所有 2015 迷渡。保留一切权利。"
+   },
+   "extErrorMissingToken": {
+      "message": "没有 access token，请在“选项”页面中创建一个。"
+   },
+   "extErrorServer": {
+      "message": "服务器错误。"
+   },
+   "extErrorDataFormat": {
+      "message": "数据格式错误。"
+   },
+   "extErrorParse": {
+      "message": "解析数据时出现错误。"
+   },
+   "extErrorUnknown": {
+      "message": "发生未知错误。"
+   },
+   "extTokenInvalid": {
+      "message": "无效"
+   },
+   "extTokenValid": {
+      "message": "有效"
+   },
+   "extTokenChecking": {
+      "message": "正在检查..."
+   },
+   "extAutoCheck": {
+      "message": "系统会自动检查 Token 状态"
+   },
+   "extCheckNow": {
+      "message": "立即检查"
+   },
+   "extDelete": {
+      "message": "删除"
+   },
+   "extEnable": {
+      "message": "启用"
+   },
+   "extStatuseSuccess": {
+      "message": "获取成功"
+   },
+   "extStatuseFailure": {
+      "message": "获取失败"
+   },
+
+   "pageActionTitle": {
+      "message": "点击查看详细信息..."
+   }
+}

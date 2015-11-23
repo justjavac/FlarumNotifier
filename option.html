@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title i18n-content="extShortName"></title>
+		<link rel="stylesheet" type="text/css" href="css/options.css">
+    	<script src="js/i18n_template_no_process.js"></script>
+	</head>
+	<body>
+		<div id="head" class="box">
+			<div class="avatar-parent-child left">
+			  <img class="avatar" src="../icon-48.png" width="48" height="48">
+			  <img class="avatar avatar-child avatar-notifications" src="../img/notifications_on.png" width="20" height="20">
+			</div>
+			<h1 class="left" i18n-content="extName"></h1>
+			<div class="clearfix"></div>
+			<hr/>
+			<div>Token: <strong id="token"></strong> <span id="token-status" class="text-error" i18n-content="extTokenInvalid"></span></div>
+			<div>Email: <strong id="email"></strong> <a id="logout" href="#" i18n-content="extLogout"></a></div>
+			<p>
+		      <span i18n-content="extAutoCheck"></span>
+		      <button id="btn-check" class="btn btn-outline" i18n-content="extCheckNow"></button>
+		    </p>
+		    <!-- <hr/>
+		    <div class="site-list clearfix">
+		    	<div class="item">
+
+					<a class="btn btn-sm btn-danger delete" href="#" i18n-content="extDelete"></a>
+
+					<label class="enable checkbox">
+					    <input type="checkbox"><span i18n-content="extEnable"></span>
+					</label>
+
+					<a class="url" href="#" target="_blank">http://flarum.org.cn</a>
+
+					<span class="status" i18n-content="extStatuseSuccess"></span>
+
+		    	</div>
+		    	<div class="item">
+
+					<a class="btn btn-sm btn-danger delete" href="#" i18n-content="extDelete"></a>
+
+					<label class="enable checkbox">
+					    <input type="checkbox"><span i18n-content="extEnable"></span>
+					</label>
+
+					<a class="url" href="#" target="_blank">http://flarum.org.cn</a>
+
+					<span class="status text-error" i18n-content="extStatuseFailure"></span>
+
+		    	</div>
+		    </div> -->
+		</div>
+
+		<div id="content" class="box">
+    		<section>
+				<input class="input-block" type="url" id="url" i18n-placeholder="extTxtUrl" autofocus>
+			</section>
+    		<section>
+				<input class="input-block" type="text" id="username" i18n-placeholder="extTxtUserName" >
+			</section>
+			<section>
+				<input class="input-block" type="password" id="password" i18n-placeholder="extTxtPassword">
+			</section>
+			<section>
+			<div class="form-actions">
+			  <button type="submit" class="btn btn-primary" id="btn" i18n-content="extBtnLogin"></button>
+			  <button type="button" class="btn" id="btn-cancel" i18n-content="extBtnCancel"></button>
+			</div>
+			</section>
+	    </div>
+
+		<div id="footer" class="box" style="background-color:white;border-radius:10px">
+    		<section>
+				<span i18n-content="extCopyright"></span>
+				<span i18n-content="extIntroductionSource"></span>
+				<span><a href="https://github.com/justjavac/FlarumNotifier" target="_blank">https://github.com/justjavac/FlarumNotifier</a></span>
+			</section>
+	    </div>
+
+		<script src="js/common.js"></script>
+		<script src="js/api.js"></script>
+		<script src="js/option.js"></script>
+	</body>
+</html>
