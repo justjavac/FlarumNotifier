@@ -1,6 +1,6 @@
 # FlarumNotifier
 
-Chrome Extension - Displays your [Flarum](http://flarum.org) notifications unread count.
+Chrome Extension - Displays your [Flarum](http://flarum.org) discussions unread count.
 
 ## Introduction
 
