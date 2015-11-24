@@ -12,7 +12,7 @@
       "message": "http://discuss.flarum.org.cn"
    },
    "extTxtUrl": {
-      "message": "URL地址 (例如: http://discuss.flarum.org.cn)"
+      "message": "URL地址 (例如: http://discuss.flarum.org.cn 或你自己的网站)"
    },
    "extTxtUserName": {
       "message": "用户名 或 邮箱"

@@ -12,7 +12,7 @@
       "message": "https://discuss.flarum.org"
    },
    "extTxtUrl": {
-      "message": "Root url (eg. https://discuss.flarum.org)"
+      "message": "Root url (eg. https://discuss.flarum.org or your own website)"
    },
    "extTxtUserName": {
       "message": "Username or Email"
