@@ -2,8 +2,7 @@
     <tr>
       <td width="100%">
           <img src="icon-48.png" width="48" height="48">
-          <img src="img/notifications_on.png" width="20" height="20">
-          <h2>FlarumNotifier</h2>
+          Flarum Notifier
       </td>
     </tr>
     <tr>
