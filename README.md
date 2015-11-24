@@ -1,11 +1,9 @@
 <table width="100%">
     <tr>
-      <td>
-        <div class="avatar-parent-child left">
-          <img class="avatar" src="../icon-48.png" width="48" height="48">
-          <img class="avatar avatar-child avatar-notifications" src="../img/notifications_on.png" width="20" height="20">
-        </div>
-        <h1 class="left">FlarumNotifier</h1>
+      <td width="100%">
+          <img src="icon-48.png" width="48" height="48">
+          <img src="img/notifications_on.png" width="20" height="20">
+          <h2>FlarumNotifier</h2>
       </td>
     </tr>
     <tr>
