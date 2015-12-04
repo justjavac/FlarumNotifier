@@ -163,7 +163,7 @@
 				'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
 			};
 
-			xhr('POST', url.value + '/login', opts, function (data, status, response) {
+			xhr('POST', url.value + '/api/token', opts, function (data, status, response) {
 				if (status >= 500) {
 					return;
 				}
